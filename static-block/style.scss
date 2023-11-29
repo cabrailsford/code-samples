@@ -1,0 +1,30 @@
+.cab-contributor-thanks {
+	box-sizing: border-box;
+	font-family: var(--wp--preset--font-family--outfit, 'sans-serif');
+	background-color: var(--wp--custom--color--contributor, pink);
+	color: var(--wp--preset--color--contrast, black);
+	border: 5px solid var(--wp--custom--color--contributor-border, deeppink);
+	padding: var(--wp--preset--spacing--40, 20px);
+	margin-block-start: var(--wp--preset--spacing--10, 1rem);
+
+	> * {
+		margin-block-start: 0;
+		margin-block-end: 0;
+
+		& + * {
+			margin-block-start: 1rem;
+		}
+	}
+
+	.block-editor-default-block-appender__content {
+		margin-block: 0;
+	}
+
+	.block-editor-default-block-appender .block-editor-inserter__toggle {
+		position: absolute;
+		line-height: 0;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+}

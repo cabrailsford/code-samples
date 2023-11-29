@@ -1,0 +1,35 @@
+######################################
+# Ignore some system generated files #
+######################################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.log
+*.sql
+*.sqlite
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.codekit-cache
+config.codekit3
+.sass-cache
+# Sublime
+*.sublime-project
+*.sublime-workspace
+# CodeKit
+# PhpStorm
+.idea/
+node_modules

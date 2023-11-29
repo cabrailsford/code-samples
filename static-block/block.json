@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cab/contributor-thanks",
+	"version": "1.0.0",
+	"title": "Contributor Thanks",
+	"category": "text",
+	"icon": "heart",
+	"description": "A custom textbox to display a thank you message.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"className": false
+	},
+	"textdomain": "cab-blocks",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
