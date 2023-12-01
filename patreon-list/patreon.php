@@ -150,8 +150,8 @@ function display_patrons( $atts = array() ) {
 
 	// Timestamp expired, re-run all updates.
 	if ( is_timestamp_expired( intval( $atts['minutes'] ) ) ) {
-		$tiers   = get_patreon_tiers();
-		$members = get_patreon_members();
+		$tiers   = get_patreon_tiers( $tiers );
+		$members = get_patreon_members( $members );
 	}
 
 	// No saved tier array.
