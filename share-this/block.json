@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cab/share-this",
+	"version": "0.1.0",
+	"title": "Share This",
+	"category": "widgets",
+	"icon": "share-alt2",
+	"description": "A block to allow sharing via the Web Share API, if available.",
+	"attributes": {
+		"content": {
+            "type": "string",
+            "default": ""
+        }
+	},
+	"example": {
+		"attributes": {
+	      "content": "Share with your network"
+	    }
+	},
+	"supports": {
+		"html": false,
+		"multiple": false
+	},
+	"textdomain": "share-this",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}
