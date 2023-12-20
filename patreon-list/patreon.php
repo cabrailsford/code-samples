@@ -180,10 +180,16 @@ function display_patrons( $atts = array() ) {
 		$member_names     = array();
 		?>
 
-		<div class="patreon-tier__wrap">
-		<h2 class="patreon-tier__title"><span><?php esc_html( $tier_title ); ?></span></h2>
-		<p class="patreon-tier__amount">For $<?php esc_html( $tier_amount ); ?>+ per month:</p>
-		<div class="patreon-tier__description"><?php wp_kses_post( strip_tags( $tier_description, '<ul><li>' ) ); ?></div>
+		<div class="patreon-tier">
+		<h2 class="patreon-tier__title"><span><?php echo esc_html( $tier_title ); ?></span></h2>
+		<?php
+		if ( ! empty( $tier_amount ) ) {
+			?>
+			<p class="patreon-tier__amount">For $<?php echo esc_html( $tier_amount ); ?>+ per month:</p>
+			<?php
+		}
+		?>
+		<div class="patreon-tier__description"><?php echo wp_kses_post( strip_tags( $tier_description, '<ul><li>' ) ); ?></div>
 
 		<?php
 		if ( ! empty( $members ) ) {
@@ -204,9 +210,9 @@ function display_patrons( $atts = array() ) {
 
 		if ( ! empty( $member_names ) ) {
 			natcasesort( $member_names );
-			echo '<ul class="patrons">';
+			echo '<ul class="patreon-tier__list">';
 			foreach ( $member_names as $key => $value ) {
-				echo '<li>' . esc_html( $key ) . '</li>';
+				echo '<li class="patreon-tier__item">' . esc_html( $key ) . '</li>';
 			}
 			echo '</ul>';
 		}

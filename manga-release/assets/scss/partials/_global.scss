@@ -1,0 +1,170 @@
+/*
+ * Custom properties
+*/
+
+:root {
+  --font-base: system-ui, sans-serif;
+  --font-secondary: -apple-system-ui-serif, ui-serif, Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  --font-display: "Outfit Variable";
+  --flow-space: initial;
+  --page-gutter: 1rem;
+  --content-size: 50rem;
+  --wide-size: 70rem;
+  --space-default: 1em;
+  --space-sm: var(--space-default);
+  --space-md: calc(3 * var(--space-default));
+  --space-lg: calc(5 * var(--space-default));
+  --color-base: #FFFFFF;
+  --color-contrast: #000000;
+  --color-primary: #235990;
+  --color-secondary: #c3515e;
+}
+
+
+/*
+ * Font declarations
+*/
+
+@font-face {
+  font-family: 'Outfit Variable';
+  src: url('../fonts/outfit-var.woff2') format('woff2');
+       font-weight: 400 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+/*
+ * Element styles
+*/
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-base);
+  color: var(--color-contrast);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display), var(--font-base);
+  font-weight: 700;
+  text-wrap: pretty;
+}
+
+h1 {
+  font-size: clamp(2rem, 2.5vw + 1rem, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 1.75rem);
+}
+
+h3 {}
+
+a {
+  color: var(--color-primary);
+
+  &:where(:focus, :hover) {
+    color: var(--color-secondary);
+  }
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+  }
+
+  &[href] {
+    text-underline-offset: 0.2ex;
+
+    &:where(:focus, :hover) {
+      text-decoration: none;
+    }
+  }
+}
+
+label {
+  display: block;
+}
+
+button,
+select {
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+main, footer {
+  --flow-space: var(--space-md);
+}
+
+article {
+  --flow-space: initial;
+
+  & > * {
+    max-width: min(100% - 2 * var(--page-gutter), var(--popout, var(--content-size)));
+    margin-inline: auto;
+  }
+}
+
+
+/*
+ * Utility classes
+*/
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:active) {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.flow {
+  > * {
+    margin-block: 0;
+
+    + * {
+      margin-block-start: var(--flow-space, var(--space-sm));
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--min)), 1fr));
+  gap: var(--row-gap, var(--gap, 1rem)) var(--column-gap, var(--gap, 1rem));
+}
+
+
+/*
+ * Site Header and Footer
+*/
+
+.site-header,
+.site-footer {
+  --content-size: var(--wide-size);
+  font-family: var(--font-display), var(--font-base);
+  background-color: var(--color-contrast);
+  color: var(--color-base);
+  padding-block: 1rem;
+
+  & > * {
+    max-width: min(100% - 2 * var(--page-gutter), var(--popout, var(--content-size)));
+    margin-inline: auto;
+  }
+}
+
+.site-header {
+  &__nav-list {
+    padding-inline-start: 0;
+    margin: 0;
+    list-style-type: "";
+  }
+}

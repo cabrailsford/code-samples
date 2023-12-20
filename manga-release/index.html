@@ -1,0 +1,189 @@
+<!DOCTYPE>
+<html lang="en-US">
+<head>
+	<title>Manga Release Sample</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="assets/js/main.js" defer></script>
+</head>
+<body class="flow">
+	<header class="site-header" role="banner">
+		<div class="site-header__inner">
+			<a href="#">Lorem Ipsum</a>
+		</div>
+	</header>
+	<main>
+		<article class="flow">
+			<header class="entry-header flow">
+				<h1>January 2024 Manga Releases</h1>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>
+				<p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+			</header>
+
+			<release-filters>
+				<details class="manga-release-filters flow" open>
+					<summary class="manga-release-filters__title">Filter Releases</summary>
+					<form class="manga-release-filters__form">
+						<p class="manga-release-filters__description">Choose filters below to see what matches your criteria.</p>
+						<div class="manga-release-filters__field-group">
+							<label for="manga-date" class="manga-release-filters__label">By Date</label>
+							<select name="mangaDate" id="manga-date" data-type="date" class="manga-release-filters__select">
+								<option value="">Select</option>
+								<option value="01-01-2024">January 1</option>
+								<option value="01-08-2024">January 8</option>
+								<option value="01-15-2024">January 15</option>
+							</select>
+						</div>
+						<div class="manga-release-filters__field-group">
+							<label for="manga-publisher" class="manga-release-filters__label">By Publisher</label>
+							<select name="mangaPublisher" id="manga-publisher" data-type="publisher" class="manga-release-filters__select">
+								<option value="">Select</option>
+								<option value="azuki">Azuki</option>
+								<option value="kodansha">Kodansha</option>
+								<option value="viz">Viz</option>
+							</select>
+						</div>
+						<button type="button" class="manga-release-filters__btn manga-release-filters__btn--filter" data-btn="filter">Filter</button>
+						<button type="button" class="manga-release-filters__btn manga-release-filters__btn--clear" data-btn="clear">Clear</button>
+					</form>
+				</details>
+			</release-filters>
+
+			<section class="manga-release flow" data-date="01-01-2024" aria-labelledby="january-01-2024">
+				<h2 class="manga-release__title" id="january-01-2024">January 1</h2>
+				<ul class="manga-release__cards grid">
+					<li class="manga-release-card" data-publisher="azuki">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#somethingelse" class="manga-release-card__link">The Amazing Village Creator: Slow Living with the Village Building Cheat Skill #025-029</a></h3>
+						<p class="manga-release-card__publisher">Azuki</p>
+						<p class="manga-release-card__author">By Shichio Kuzu</p>
+					</li>
+					<li class="manga-release-card" data-publisher="kodansha">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">A Dating Sim of Life or Death #051-070</a></h3>
+						<p class="manga-release-card__publisher">Kodansha</p>
+						<p class="manga-release-card__author">By Waruiotoko</p>
+					</li>
+					<li class="manga-release-card" data-publisher="viz">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Enough with This Slow Life! I Was Reincarnated as a High Elf and Now I'm Bored: Volume 4</a></h3>
+						<p class="manga-release-card__publisher">Viz</p>
+						<p class="manga-release-card__author">By rarutori</p>
+					</li>
+					<li class="manga-release-card" data-publisher="azuki">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">False Child #013</a></h3>
+						<p class="manga-release-card__publisher">Azuki</p>
+						<p class="manga-release-card__author">By Taku Kawamura</p>
+					</li>
+					<li class="manga-release-card" data-publisher="kodansha">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Natsume &amp; Natsume Chapter 34.2</a></h3>
+						<p class="manga-release-card__publisher">Kodansha</p>
+						<p class="manga-release-card__author">By Shunsuke Sorato</p>
+					</li>
+					<li class="manga-release-card" data-publisher="viz">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Smoking Behind the Supermarket with You</a></h3>
+						<p class="manga-release-card__publisher">Viz</p>
+						<p class="manga-release-card__author">By JINUSHI</p>
+					</li>
+					<li class="manga-release-card" data-publisher="azuki">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">The Tenth Prism Chapter 19</a></h3>
+						<p class="manga-release-card__publisher">Azuki</p>
+						<p class="manga-release-card__author">By Masahito Soda, Kanaka Mizuki</p>
+					</li>
+					<li class="manga-release-card" data-publisher="kodansha">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">You Were Experienced, I Was Not: Our Dating Story #016-017</a></h3>
+						<p class="manga-release-card__publisher">Kodansha</p>
+						<p class="manga-release-card__author">By Nagaoka Makiko</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="manga-release flow" data-date="01-08-2024" aria-labelledby="january-08-2024">
+				<h2 class="manga-release__title" id="january-08-2024">January 8</h2>
+				<ul class="manga-release__cards grid">
+					<li class="manga-release-card" data-publisher="viz">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Akane-banashi, Vol. 3</a></h3>
+						<p class="manga-release-card__publisher">Viz</p>
+						<p class="manga-release-card__author">By Yuki Suenaga</p>
+					</li>
+					<li class="manga-release-card" data-publisher="azuki">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Garuda Chapter 4</a></h3>
+						<p class="manga-release-card__publisher">Azuki</p>
+						<p class="manga-release-card__author">By Haguro</p>
+					</li>
+					<li class="manga-release-card" data-publisher="viz">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Nobo and her? Chapter 21</a></h3>
+						<p class="manga-release-card__publisher">Viz</p>
+						<p class="manga-release-card__author">By Molico Ross</p>
+					</li>
+					<li class="manga-release-card" data-publisher="kodansha">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Otohime Diver Chapter 8</a></h3>
+						<p class="manga-release-card__publisher">Kodansha</p>
+						<p class="manga-release-card__author">By Okito Endo</p>
+					</li>
+					<li class="manga-release-card" data-publisher="azuki">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Paranoia Cage Chapter 14</a></h3>
+						<p class="manga-release-card__publisher">Azuki</p>
+						<p class="manga-release-card__author">By Coolkyousinnjya</p>
+					</li>
+					<li class="manga-release-card" data-publisher="kodansha">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Somari and the Guardian of the Forest Chapter 35</a></h3>
+						<p class="manga-release-card__publisher">Kodansha</p>
+						<p class="manga-release-card__author">By Yako Gureishi</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="manga-release flow" data-date="01-15-2024" aria-labelledby="january-15-2024">
+				<h2 class="manga-release__title" id="january-15-2024">January 15</h2>
+				<ul class="manga-release__cards grid">
+					<li class="manga-release-card" data-publisher="azuki">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Best of Godzilla, Vol. 1</a></h3>
+						<p class="manga-release-card__publisher">Azuki</p>
+						<p class="manga-release-card__author">By James Stokoe (Author), Bobby Curnow (Author), Chris Mowry (Author), Dean Haspiel (Illustrator), Dave Wachter (Illustrator)</p>
+					</li>
+					<li class="manga-release-card" data-publisher="azuki">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Blade of the Moon Princess, Vol. 2</a></h3>
+						<p class="manga-release-card__publisher">Azuki</p>
+						<p class="manga-release-card__author">By Tatsuya Endo</p>
+					</li>
+					<li class="manga-release-card" data-publisher="kodansha">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">Chainsaw Man, Vol. 13</a></h3>
+						<p class="manga-release-card__publisher">Kodansha</p>
+						<p class="manga-release-card__author">By Tatsuki Fujimoto</p>
+					</li>
+					<li class="manga-release-card" data-publisher="kodansha">
+						<a href="#" class="manga-release-card__image-link" aria-hidden="true" tabindex="-1"><img class="manga-release-card__image" alt="" src="https://placehold.co/230x350"></a>
+						<h3 class="manga-release-card__title"><a href="#" class="manga-release-card__link">The Girl I Like Forgot Her Glasses 07</a></h3>
+						<p class="manga-release-card__publisher">Kodansha</p>
+						<p class="manga-release-card__author">By Koume Fujichika</p>
+					</li>
+				</ul>
+			</section>
+			<section class="manga-release-warning" hidden aria-labelledby="all-manga-hidden">
+				<h2 class="manga-release-warning__title" id="all-manga-hidden">It appears you've hidden all options.</h2>
+				<p class="manga-release-warning__description">Praesent dapibus neque id cursus faucibus tortor neque egestas auguae eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi tincidunt quis accumsan porttitor facilisis luctus metus.</p>
+			</section>
+		</article>
+	</main>
+	<footer class="site-footer">
+		<div class="site-footer__inner flow">
+			<p>Copyright &copy; 2023</p>
+		</div>
+	</footer>
+</body>
+</html>

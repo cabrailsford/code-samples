@@ -1,0 +1,28 @@
+/*
+ * Patreon List Component
+*/
+
+.patreon-tier {
+	border-block-start: 1px solid;
+	padding-block-start: 2rem;
+	padding-block-end: 2rem;
+
+	&__title {
+		margin-block-start: 0;
+	}
+
+	&__list {
+		padding-inline-start: 0;
+		margin-block-end: 0;
+		list-style-type: "";
+		column-count: 2;
+		gap: 1rem;
+	}
+
+	&__item {
+		margin-block-end: 0.5rem;
+		word-wrap: break-word;
+		line-height: 1.2;
+		font-weight: 500;
+	}
+}
